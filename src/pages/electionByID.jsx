@@ -149,7 +149,7 @@ const ElectionDetailsPage = () => {
     useEffect(() => {
         const fetchElectionDetails = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/election/${id}`);
+                const response = await axios.get(`https://i-vote-backend.vercel.app/election/${id}`);
                 const electionData = response.data;
                 setElection(electionData);
 
@@ -174,7 +174,7 @@ const ElectionDetailsPage = () => {
 
     const handleVote = async () => {
         try {
-            const response = await axios.post(`http://localhost:5000/cast/${id}`, { party: selectedParty }, {
+            const response = await axios.post(`https://i-vote-backend.vercel.app/cast/${id}`, { party: selectedParty }, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('token')}`
                 }

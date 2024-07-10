@@ -115,7 +115,7 @@ function UserDashboard() {
   useEffect(() => {
     const fetchElections = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/all/info');
+        const response = await axios.get('https://i-vote-backend.vercel.app/all/info');
         const elections = response.data;
 
         setLiveElections(elections.filter(election => election.status === 'Live'));

@@ -142,7 +142,7 @@ const CreateElectionForm = ({ onClose, onSuccess }) => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/root/elections', {
+            const response = await axios.post('https://i-vote-backend.vercel.app/root/elections', {
                 title,
                 description,
                 parties,
