@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Login from './pages/login';
+import Signup from './pages/signup';
+import HomePage from './pages/homePage';
+import { Route, Routes } from 'react-router-dom';
+import UserDashboard from './pages/userDashboard';
+import ProtectedRoute from './pages/protectedroute';
+import ElectionVotingPage from './pages/electionByID';
+import RootDashboard from './pages/rootDashboard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/user-dashboard" element={<ProtectedRoute element={UserDashboard} />} />
+        <Route path="/elections/:id" element={<ProtectedRoute element={ElectionVotingPage} />} />
+        <Route path="/root-dashboard" element={<ProtectedRoute element={RootDashboard} />} />
+      </Routes>
     </div>
   );
 }
