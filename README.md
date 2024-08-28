@@ -19,4 +19,4 @@ You may also see any lint errors in the console.
 
 # I-Vote-FrontEnd
 This is the frontend folder of the I-Vote MERN web application
->>>>>>> 73c876aa85b1663904a94bbdfcbe04be638ec62b
+
