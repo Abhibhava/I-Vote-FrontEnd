@@ -3,7 +3,7 @@ import Signup from './pages/signup';
 import HomePage from './pages/homePage';
 import { Route, Routes } from 'react-router-dom';
 import UserDashboard from './pages/userDashboard';
-import ProtectedRoute from './pages/protectedroute';
+import {ProtectedRoute} from './pages/protectedroute';
 import ElectionVotingPage from './pages/electionByID';
 import RootDashboard from './pages/rootDashboard';
 

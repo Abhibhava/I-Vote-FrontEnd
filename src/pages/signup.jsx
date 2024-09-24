@@ -66,7 +66,7 @@ function SignupForm() {
             </div>
             <h4 className="mb-2 font-medium text-gray-700 xl:text-xl">Welcome to I-Vote!</h4>
             <p className="mb-6 text-gray-500">Please sign-up and form a new account</p>
-            <form className="mb-4" onSubmit={handleSignup}>
+            <form className="mb-4">
               <div className="mb-4">
                 <label htmlFor="username" className="mb-2 inline-block text-xs font-medium uppercase text-gray-700">Username</label>
                 <input
@@ -121,7 +121,7 @@ function SignupForm() {
                 </select>
               </div>
               <div className="mb-4">
-                <button className="grid w-full cursor-pointer select-none rounded-md border border-indigo-500 bg-indigo-500 py-2 px-5 text-center align-middle text-sm text-white shadow hover:border-indigo-600 hover:bg-indigo-600 hover:text-white focus:border-indigo-600 focus:bg-indigo-600 focus:text-white focus:shadow-none" type="submit" >Sign Up</button>
+                <button className="grid w-full cursor-pointer select-none rounded-md border border-indigo-500 bg-indigo-500 py-2 px-5 text-center align-middle text-sm text-white shadow hover:border-indigo-600 hover:bg-indigo-600 hover:text-white focus:border-indigo-600 focus:bg-indigo-600 focus:text-white focus:shadow-none" type="submit" onClick={handleSignup}>Sign Up</button>
               </div>
             </form>
             <p className="mb-4 text-center">
