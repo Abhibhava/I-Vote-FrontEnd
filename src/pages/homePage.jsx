@@ -47,7 +47,7 @@ const HomePage = () => {
 
       {/* Footer */}
       <footer className="w-full py-4 bg-white text-center text-gray-600">
-        <p>Created by <Link to={"https://github.com/RyanGupta01"} className="text-indigo-600 hover:text-indigo-800 transition duration-200 ease-in-out">Ryan Gupta</Link></p>
+        <p>Created by <Link to={"https://github.com/Ritukar-Pandey"} className="text-indigo-600 hover:text-indigo-800 transition duration-200 ease-in-out">Ritukar Pandey</Link></p>
       </footer>
     </div>
   );
